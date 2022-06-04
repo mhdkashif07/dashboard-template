@@ -1,0 +1,7 @@
+.primary__button button{
+    height: 35px;
+    background-color: var(--main-color);
+    width: 100%;
+    color: var(--txt-white);
+    border-radius: var(--border-radius);
+}
