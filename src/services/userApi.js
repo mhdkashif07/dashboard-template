@@ -1,12 +1,11 @@
 import axios from "axios";
 
 // root url
-const rootUrl = "https://api.jetali.uk/api/v1/user";
+const rootUrl = "http://18.134.150.58:3001/api/v1/user";
 
 //adding the endpoints to the root url
 const getAllUsersUrl = rootUrl + "/byAdmin";
 const deleteUserUrl = rootUrl + "/deleteByAdmin";
-
 
 //getting all branches
 export const getAllUsers = () => {
@@ -31,7 +30,6 @@ export const getAllUsers = () => {
   });
 };
 
-
 //delete a user with id
 export const deleteUser = (id) => {
   //getting token from session storage
@@ -54,4 +52,3 @@ export const deleteUser = (id) => {
     }
   });
 };
-
